@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Revolutionizing Liver Care</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+        .column label, .column input, .column select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+  <!-- Favicons -->
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="/static/assets/img/Liver-Protect.png" alt=""></a>
+      <h1 data-aos="zoom-in">Welcome To LiverCare</h1>
+      <h2 data-aos="fade-up">Unveil Your Future: Discover Your Risk for Liver Cirrhosis Today!</h2>
+      <a data-aos="fade-up" data-aos-delay="200" href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="/static/assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Us</h2>
+          <p>Wanna know a Little bit about us ?</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="/static/assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>Hello There :)</h3>
+              <p class="fst-italic">
+                We are passionate computer science engineering students with a shared enthusiasm for machine learning and predictive modeling. Driven by our curiosity and dedication, we embarked on a journey to develop an innovative model for predicting liver cirrhosis risks. Our collaborative effort blends cutting-edge technology with a deep commitment to improving healthcare outcomes. Through rigorous research and iterative refinement, we aim to empower individuals with personalized insights into their health, paving the way for a healthier future.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Harnessing the power of machine learning to advance medical diagnostics.</li>
+                <li><i class="bx bx-check-double"></i> Combining our academic rigor with practical application in healthcare technology.</li>
+                <li><i class="bx bx-check-double"></i> Committed to continuous learning and innovation in predictive modeling.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Liver Cirrhosis Prediction Section ======= -->
+<section id="prediction" class="prediction">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Unveil Your Future: Discover Your Risk for Liver Cirrhosis Today!</h2>
+            <p>Enter your details to get a personalized risk assessment.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2" data-aos="fade-left">
+                <div class="content pt-4 pt-lg-0">
+                    <form action="/submit" method="post">
+                        <div class="form-container">
+                            <div class="column">
+                                <label for="age">Age:</label>
+                                <input type="number" id="age" name="Age" value="38" required>
+                
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="Gender" required>
+                                    <option value="female">female</option>
+                                    <option value="male">male</option>
+                                </select>
+                
+                                <label for="place">Place (location where the patient lives):</label>
+                                <select id="place" name="Place(location where the patient lives)" required>
+                                    <option value="rural">rural</option>
+                                    <option value="urban">urban</option>
+                                </select>
+                
+                                <label for="duration">Duration of alcohol consumption (years):</label>
+                                <input type="number" id="duration" name="Duration of alcohol consumption(years)" value="16" required>
+                
+                                <label for="quantity">Quantity of alcohol consumption (quarters/day):</label>
+                                <input type="number" id="quantity" name="Quantity of alcohol consumption (quarters/day)" value="1" required>
+                
+                                <label for="type">Type of alcohol consumed:</label>
+                                <select id="type" name="Type of alcohol consumed" required>
+                                    <option value="country">country liquor</option>
+                                    <option value="branded">branded liquor</option>
+                                    <option value="both">both</option>
+                                </select>
+                
+                                <label for="hepB">Hepatitis B infection:</label>
+                                <select id="hepB" name="Hepatitis B infection" required>
+                                    <option value="negative">negative</option>
+                                    <option value="positive">positive</option>
+                                </select>
+                
+                                <label for="hepC">Hepatitis C infection:</label>
+                                <select id="hepC" name="Hepatitis C infection" required>
+                                    <option value="negative">negative</option>
+                                    <option value="positive">positive</option>
+                                </select>
+                
+                                <label for="diabetes">Diabetes Result:</label>
+                                <select id="diabetes" name="Diabetes Result" required>
+                                    <option value="NO">NO</option>
+                                    <option value="YES">YES</option>
+                                </select>
+                
+                                <label for="bloodPressure">Blood pressure (mmHg):</label>
+                                <input type="text" id="bloodPressure" name="Blood pressure (mmhg)" value="116/70" required>
+                
+                                <label for="obesity">Obesity:</label>
+                                <select id="obesity" name="Obesity" required>
+                                    <option value="no">no</option>
+                                    <option value="yes">yes</option>
+                                </select>
+                
+                                <label for="familyHistory">Family history of cirrhosis/hereditary:</label>
+                                <select id="familyHistory" name="Family history of cirrhosis/ hereditary" required>
+                                    <option value="no">no</option>
+                                    <option value="yes">yes</option>
+                                </select>
+                            </div>
+                
+                            <div class="column">
+                                <label for="tch">TCH:</label>
+                                <input type="number" id="tch" name="TCH" value="176" required>
+                
+                                <label for="tg">TG:</label>
+                                <input type="number" id="tg" name="TG" value="160" required>
+                
+                                <label for="ldl">LDL:</label>
+                                <input type="number" id="ldl" name="LDL" value="108" required>
+                
+                                <label for="hdl">HDL:</label>
+                                <input type="number" id="hdl" name="HDL" value="36" required>
+                
+                                <label for="hemoglobin">Hemoglobin (g/dl):</label>
+                                <input type="number" step="0.1" id="hemoglobin" name="Hemoglobin  (g/dl)" value="15" required>
+                
+                                <label for="pcv">PCV (%):</label>
+                                <input type="number" id="pcv" name="PCV  (%)" value="35" required>
+                
+                                <label for="rbc">RBC (million cells/microliter):</label>
+                                <input type="number" step="0.1" id="rbc" name="RBC" value="5.5" required>
+                
+                                <label for="mcv">MCV (femtoliters/cell):</label>
+                                <input type="number" id="mcv" name="MCV   (femtoliters/cell)" value="86" required>
+                
+                                <label for="mch">MCH (picograms/cell):</label>
+                                <input type="number" id="mch" name="MCH" value="32" required>
+                
+                                <label for="mchc">MCHC (grams/deciliter):</label>
+                                <input type="number" step="0.1" id="mchc" name="MCHC" value="33" required>
+                
+                                <label for="totalCount">Total Count:</label>
+                                <input type="number" id="totalCount" name="Total Count" value="6000" required>
+                
+                                <label for="polymorphs">Polymorphs (%):</label>
+                                <input type="number" step="0.1" id="polymorphs" name="Polymorphs  (%) " value="70" required>
+                
+                                <label for="lymphocytes">Lymphocytes (%):</label>
+                                <input type="number" step="0.1" id="lymphocytes" name="Lymphocytes  (%)" value="25" required>
+                            </div>
+                
+                            <div class="column">
+                                <label for="monocytes">Monocytes (%):</label>
+                                <input type="number" step="0.1" id="monocytes" name="Monocytes   (%)" value="4" required>
+                
+                                <label for="eosinophils">Eosinophils (%):</label>
+                                <input type="number" step="0.1" id="eosinophils" name="Eosinophils   (%)" value="0.5" required>
+                
+                                <label for="basophils">Basophils (%):</label>
+                                <input type="number" step="0.1" id="basophils" name="Basophils  (%)" value="0.5" required>
+                
+                                <label for="plateletCount">Platelet Count (lakhs/mm):</label>
+                                <input type="number" step="0.1" id="plateletCount" name="Platelet Count  (lakhs/mm)" value="1.1" required>
+                
+                                <label for="totalBilirubin">Total Bilirubin (mg/dl):</label>
+                                <input type="number" step="0.1" id="totalBilirubin" name="Total Bilirubin    (mg/dl)" value="3" required>
+                
+                                <label for="direct">Direct (mg/dl):</label>
+                                <input type="number" step="0.1" id="direct" name="Direct    (mg/dl)" value="2" required>
+                
+                                <label for="indirect">Indirect (mg/dl):</label>
+                                <input type="number" step="0.1" id="indirect" name="Indirect     (mg/dl)" value="1" required>
+                
+                                <label for="totalProtein">Total Protein (g/dl):</label>
+                                <input type="number" step="0.1" id="totalProtein" name="Total Protein     (g/dl)" value="5" required>
+                
+                                <label for="albumin">Albumin (g/dl):</label>
+                                <input type="number" step="0.1" id="albumin" name="Albumin   (g/dl)" value="3" required>
+                
+                                <label for="globulin">Globulin (g/dl):</label>
+                                <input type="number" step="0.1" id="globulin" name="Globulin  (g/dl)" value="2" required>
+                
+                                <label for="agRatio">A/G Ratio:</label>
+                                <input type="number" step="0.1" id="agRatio" name="A/G Ratio" value="1.1" required>
+                
+                                <label for="alPhosphatase">AL. Phosphatase (U/L):</label>
+                                <input type="number" id="alPhosphatase" name="AL.Phosphatase      (U/L)" value="96" required>
+                
+                                <label for="sgot">SGOT/AST (U/L):</label>
+                                <input type="number" id="sgot" name="SGOT/AST      (U/L)" value="90" required>
+                
+                                <label for="sgpt">SGPT/ALT (U/L):</label>
+                                <input type="number" id="sgpt" name="SGPT/ALT    (U/L)" value="60" required>
+                
+                                <label for="usgAbdomen">USG Abdomen (diffuse liver or not):</label>
+                                <select id="usgAbdomen" name="USG Abdomen ( diffuse liver or not)" required>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+                                <!-- End Liver Cirrhosis Prediction Section -->
+
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
