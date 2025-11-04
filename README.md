@@ -31,10 +31,7 @@ The goal is to assist in **early detection of liver problems** using data-driven
 - **Source:** [Kaggle Indian Liver Patient Dataset](https://www.kaggle.com/uciml/indian-liver-patient-records)  
 - **File Used:** `HealthCareData.csv`  
 - **Attributes include:**  
-  - `Age`, `Gender`, `Total Bilirubin`, `Direct Bilirubin`,  
-  - `Alkaline Phosphatase`, `Alamine Aminotransferase`,  
-  - `Aspartate Aminotransferase`, `Total Proteins`,  
-  - `Albumin`, `Albumin and Globulin Ratio`, etc.  
+  - `Age`, `Gender`, `Place`, `Duration of Alcohol Consumption`, `Quantity of Alcohol Consumption`, `Type of Alcohol`, `Hepatitis B`,`Hepatitis C`, `Diabetes`, etc.  
 - **Target Variable:** Presence or absence of liver disease  
 
 ---
@@ -126,3 +123,4 @@ After comparing all models, the **Logistic Regression** is giving highest accura
 | **M Padma Varshitha** | **106123085** |
 | **Hema Naidu** | **106123095** |
 | **R Rajeswari** | **106123111** |
+
